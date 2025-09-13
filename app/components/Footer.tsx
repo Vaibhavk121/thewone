@@ -3,15 +3,15 @@ import Background from "../../public/bg.jpeg"
 import Image from "next/image";
 export default function Footer (){
   return (
-    <footer className="h-100">
+    <footer className="h-100 bg-white ">
       <Image
       src={Background}
       alt="Background"
-      className="absolute h-200  mt-24 bg-cover bg-center rounded-t-[48px] overflow-hidden"
+      className="absolute h-230  mt-24 bg-cover bg-center rounded-t-[48px] overflow-hidden"
       />
       
       <div className="relative z-20 container mx-auto px-8 py-20 text-white text-center">
-        <h2 className="text-4xl md:text-6xl font-extrabold mb-4 leading-tight">
+        <h2 className="text-4xl md:text-6xl font-extrabold mb-4 leading-tight pt-10">
           Hire better. Faster.
         </h2>
         <h2 className="text-4xl md:text-6xl font-extrabold mb-8 leading-tight">

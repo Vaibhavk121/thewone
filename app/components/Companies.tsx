@@ -3,12 +3,11 @@ import Netflix from "../../public/Companies/Netflix.png"
 import Google from "../../public/Companies/Google.png"
 import Atlassian from "../../public/Companies/Atlassian.png"
 import Intercom from "../../public/Companies/Intercom.png"
-import Background from "../../public/Companies/bg.avif"
+import Background from "../../public/Companies/bg (2).avif"
 export const Companies = () => {
   return (
-   <section className="min-h-screen flex flex-col items-center text-center p-8 bg-white">
-      {/* Content */}
-      <div className="max-w-6xl mx-auto space-y-12">
+   <section className=" flex flex-col items-center text-center p-8 bg-white">
+      <div className="max-w-7xl mx-auto space-y-12">
         <div className="space-y-4">
           <h1 className="text-4xl sm:text-5xl font-bold leading-tight">
             Wone is the human-centered product in <br /> the world of AI.
@@ -38,7 +37,9 @@ export const Companies = () => {
           <Image
             src={Background}
             alt="Office background"
-            className="w-[2200] rounded-xl "
+            className="w-full rounded-xl "
+            width={1500}
+            height={900}
           />
        
         </div>
