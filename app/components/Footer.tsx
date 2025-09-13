@@ -1,16 +1,17 @@
 import { ArrowRight } from "lucide-react";
-import Background from "../../public/bg.jpeg"
+import Background from "../../public/bg.avif"
 import Image from "next/image";
-export default function Footer (){
+import Link from "next/link";
+export default function Footer() {
   return (
     <footer className="h-100 bg-white ">
       <Image
-      src={Background}
-      alt="Background"
-      className="absolute h-230  mt-24 bg-cover bg-center rounded-t-[48px] overflow-hidden"
+        src={Background}
+        alt="Background"
+        className="absolute h-230 w-full mt-24 bg-cover bg-center rounded-t-[48px] overflow-hidden"
       />
-      
-      <div className="relative z-20 container mx-auto px-8 py-20 text-white text-center">
+
+      <div className="relative z-20 container mx-auto px-8 py-20 text-white items text-center">
         <h2 className="text-4xl md:text-6xl font-extrabold mb-4 leading-tight pt-10">
           Hire better. Faster.
         </h2>
@@ -20,11 +21,30 @@ export default function Footer (){
         <p className="text-lg md:text-xl font-medium mb-12">
           Make hiring easier than ever.
         </p>
-        <button className="bg-white text-black px-6 py-3 rounded-full flex items-center justify-center mx-auto space-x-2 shadow-lg hover:bg-gray-200 transition-colors">
-          <ArrowRight />
-          <span>Get early access</span>
-          
-        </button>
+        
+          <Link
+            href="#"
+            className="group block w-60 rounded-3xl bg-white p-2 mx-auto 
+                            transition-transform duration-300 ease-in-out"
+          >
+            <div className="flex  items-center justify-evenly">
+              
+              <div
+                className="rounded-lg bg-white p-2 transition-transform duration-300 
+                                ease-in-out group-hover:translate-x-2"
+              >
+                <div className="p-2 bg-black rounded-xl">
+                  <ArrowRight className="h-4 w-4 text-white  " />
+                </div>
+              </div>
+              <div className="flex transition-transform duration-300 
+                                ease-in-out group-hover:-translate-x-2">
+                <span className="font-semibold text-black">Early Access</span>
+                
+              </div>
+            </div>
+          </Link>
+        
       </div>
 
       <div className="relative z-20   mt-12 pt-12 pb-20">
