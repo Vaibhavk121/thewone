@@ -1,12 +1,13 @@
 "use client";
-
+import Image from "next/image";
+import Logo from "../../public/logo.png";
 export default function Header() {
   return (
     <header className="w-full py-6 pl-20 pr-0 bg-[#f5f3ed]">
       <div className="max-w-7xl  flex justify-between items-center">
         <div className="flex items-center ">
           
-          <span className="text-3xl font-bold text-black ">wone</span>
+          <Image src={Logo} alt="" className="w-30" />
         </div>
         
         <nav className="flex  items-center  justify-between  gap-10 ">
