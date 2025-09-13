@@ -1,12 +1,14 @@
 import { ArrowRight } from "lucide-react";
-
+import Background from "../../public/bg.jpeg"
+import Image from "next/image";
 export default function Footer (){
   return (
-    <footer 
-      className="relative mt-24 bg-cover bg-center rounded-t-[48px] overflow-hidden" 
-      style={{ backgroundImage: "url('/bg.jpeg')" }}
-    >
-      <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
+    <footer className="h-100">
+      <Image
+      src={Background}
+      alt="Background"
+      className="absolute h-200  mt-24 bg-cover bg-center rounded-t-[48px] overflow-hidden"
+      />
       
       <div className="relative z-20 container mx-auto px-8 py-20 text-white text-center">
         <h2 className="text-4xl md:text-6xl font-extrabold mb-4 leading-tight">

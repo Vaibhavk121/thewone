@@ -2,35 +2,39 @@
 
 export default function Header() {
   return (
-    <header className="w-full px-6 py-6 bg-[#f5f3ed]">
-      <div className="max-w-7xl mx-auto flex justify-between items-center">
-        <div className="flex items-center space-x-2">
+    <header className="w-full py-6 pl-20 pr-0 bg-[#f5f3ed]">
+      <div className="max-w-7xl  flex justify-between items-center">
+        <div className="flex items-center ">
           
-          <span className="text-xl font-semibold text-black">wone</span>
+          <span className="text-3xl font-bold text-black ">wone</span>
         </div>
         
-        <nav className="hidden lg:flex items-center space-x-8">
-          <a href="#" className="text-sm text-gray-700 hover:text-black transition-colors">
+        <nav className="flex  items-center  justify-between  gap-10 ">
+          <a href="#" className="text-sm text-gray-800 font-semibold hover:text-black transition-colors py-1 px-2 rounded-xl hover:bg-gray-200  ">
             Home
           </a>
-          <a href="#" className="text-sm text-gray-700 hover:text-black transition-colors">
+          <a href="#" className="text-sm text-gray-800 font-semibold hover:text-black transition-colors py-1 px-2 rounded-xl  hover:bg-gray-200">
             Sourcing
           </a>
-          <a href="#" className="text-sm text-gray-700 hover:text-black transition-colors">
+          <a href="#" className="text-sm text-gray-800 font-semibold hover:text-black transition-colors py-1 px-2 rounded-xl hover:bg-gray-200">
             Evaluation
           </a>
-          <a href="#" className="text-sm text-gray-700 hover:text-black transition-colors">
+          <a href="#" className="text-sm text-gray-800 font-semibold hover:text-black transition-colors py-1 px-2 rounded-xl hover:bg-gray-200">
             Tracking
           </a>
-          <a href="#" className="text-sm text-gray-700 hover:text-black transition-colors">
+          <a href="#" className="text-sm text-gray-800 font-semibold hover:text-black transition-colors py-1 px-2 rounded-xl hover:bg-gray-200">
             Communication
           </a>
-          <a href="#" className="text-sm text-gray-700 hover:text-black transition-colors">
+          <a href="#" className="text-sm text-gray-800 font-semibold hover:text-black transition-colors hover:bg-gray-200">
             Pricing
           </a>
-          <a href="#" className="text-sm text-gray-700 hover:text-black transition-colors">
-            <button>Early access</button>
+          <a href="#">
+            <button className="bg-gray-200 px-2 rounded-xl py-1 rounded-xl">
+            Early Access
+          </button>
           </a>
+            
+          
         </nav>
         
         <button className="lg:hidden">

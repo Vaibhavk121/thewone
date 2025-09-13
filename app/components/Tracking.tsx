@@ -1,10 +1,12 @@
 import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
-
+import Background from "../../public/Tracking/bg.avif"
+import Inside from "../../public/Tracking/inside.avif"
 export default function Tracking(){
      return (
         <section className="bg-white py-16 sm:py-24">
-            <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="mx-auto max-w-7xl ">
                 <div className="grid grid-cols-1 items-center gap-x-16 gap-y-10 lg:grid-cols-5">
                     <div className="flex flex-col gap-y-6 lg:col-span-3">
                         <p className="font-medium text-zinc-800">Tracking</p>
@@ -15,7 +17,7 @@ export default function Tracking(){
                             Source and invite candidates to apply, then review all the <br />candidates who did and easily move them through the stages.
                         </p>
                         <p className="text-lg text-bold leading-relaxed text-zinc-600">
-                            Set your own hiring workflow, number of steps and types of <br />stages you want the candidates to go through. All with a simple <br />and easy interface you don't have to learn.
+                            Set your own hiring workflow, number of steps and types of <br />stages you want the candidates to go through. All with a simple <br />and easy interface you don&quot;t have to learn.
                         </p>
                     </div>
 
@@ -26,7 +28,8 @@ export default function Tracking(){
                          transition-transform duration-300 ease-in-out hover:scale-105"
                         >
                             <div className="flex items-center justify-between">
-                                <div className="flex flex-col">
+                                <div className="flex flex-col transition-transform duration-300 
+                             ease-in-out group-hover:-translate-x-2">
                                     <span className="font-semibold text-white">
                                         Learn about Tracking
                                     </span>
@@ -36,7 +39,7 @@ export default function Tracking(){
                                 </div>
                                 <div
                                     className="rounded-lg bg-white p-2 transition-transform duration-300 
-                             ease-in-out group-hover:rotate-[-45deg]"
+                             ease-in-out group-hover:translate-x-2"
                                 >
                                     <ArrowRight className="h-4 w-4 text-black" />
                                 </div>
@@ -47,14 +50,14 @@ export default function Tracking(){
             </div>
             <div className="flex justify-center items-center w-350 ml-18 rounded-3xl h-screen relative px-20 py-10 mt-20 ">
                 
-                <img
-                    src="/Tracking/bg.avif"
+                <Image
+                    src={Background}
                     alt="Background"
-                    className="absolute inset-0 w-full h-full z-0 px-10 rounded-3xl "
+                    className="absolute inset-0 w-full h-full z-0 px-20 rounded-[150] "
                 />
 
-                <img
-                    src="/Sourcing/inside.avif"
+                <Image
+                    src={Inside}
                     alt="Webpage"
                     className="w-4/5 z-10 h-160 rounded-xl mt-18"
                 />

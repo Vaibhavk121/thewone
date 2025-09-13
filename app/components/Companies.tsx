@@ -1,3 +1,9 @@
+import Image from "next/image"
+import Netflix from "../../public/Companies/Netflix.png"
+import Google from "../../public/Companies/Google.png"
+import Atlassian from "../../public/Companies/Atlassian.png"
+import Intercom from "../../public/Companies/Intercom.png"
+import Background from "../../public/Companies/bg.avif"
 export const Companies = () => {
   return (
    <section className="min-h-screen flex flex-col items-center text-center p-8 bg-white">
@@ -9,33 +15,32 @@ export const Companies = () => {
           </h1>
           <p className="text-lg text-gray-700">
             Pioneering the next evolution of recruitment.<br />
-            Developed with the world's leading talent acquisition experts.
+            Developed with the world&apos;s leading talent acquisition experts.
           </p>
         </div>
 
-        {/* Company Logos */}
-        <div className="flex flex-col sm:flex-row items-center justify-center space-y-8 sm:space-y-0 sm:space-x-12 mt-8">
+        <div className="flex flex-col sm:flex-row items-center justify-center space-y-8 sm:space-y-0 space-x-20 mt-8 gap-10 ">
           <div className="flex items-center space-x-2">
-            <img src="/Companies/Netflix.png" alt="" className="w-40" />
+            <Image src={Netflix} alt="" className="w-30" />
           </div>
           <div className="flex items-center space-x-2">
-            <img src="/Companies/Google.png" alt="" className="w-40" />
+            <Image src={Google} alt="" className="w-30" />
           </div>
           <div className="flex items-center space-x-2">
-            <img src="/Companies/Atlassian.png" alt="" className="w-40" />
+            <Image src={Atlassian} alt="" className="w-30" />
           </div>
           <div className="flex items-center space-x-2">
-            <img src="/Companies/Intercom.png" alt="" className="w-40" />
+            <Image src={Intercom} alt="" className="w-30" />
           </div>
         </div>
 
-        <div className="mt-12 rounded-2xl overflow-hidden shadow-xl">
-          <img
-            src="/Companies/bg.avif"
+        
+          <Image
+            src={Background}
             alt="Office background"
-            
+            className="w-[2200] rounded-xl "
           />
-        </div>
+       
         </div>
     </section>
   )
