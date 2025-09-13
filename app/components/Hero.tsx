@@ -29,8 +29,7 @@ export default function Hero() {
         <div className="flex flex-col gap-5 pt-20">
 
             <div className="relative overflow-hidden w-full max-w-5xl mx-auto">
-                {/* The Text Content */}
-                <div className="text-center">
+               <div className="text-center">
                     <h1 className="font-bold text-7xl">
                         Recruiting system that helps <br /> you hire better talent faster.
                     </h1>

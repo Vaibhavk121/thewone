@@ -14,10 +14,10 @@ export default function Section1() {
                         <div className="flex flex-row gap-y-6">
                             
                                 <div className="flex flex-col w-3/5 gap-y-5 pt-10 pr-10">
-                                    <p className="text-zinc-600 font-semibold text-lg leading-relaxed">
+                                    <p className="text-black font-semibold text-lg leading-relaxed">
                                     Save weeks on repetitive work. Just post a job description and Wone will source and qualify talent so you don’t have to sift through hundreds of resumes.
                                 </p>
-                                <p className="text-zinc-600 text-lg font-semibold leading-relaxed">
+                                <p className="text-black text-lg font-semibold leading-relaxed">
                                     Take over only when the candidates have been qualified, so you’re not wasting time weeding out unqualified talent.
                                 </p>
                                 <button
